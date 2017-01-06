@@ -1,0 +1,84 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 18px "Roboto Condensed", sans-serif;
+  background-image:  linear-gradient(to bottom, #d1dbbe, #fcfff4);
+  background-repeat: no-repeat;
+  color: #3e606f;
+}
+
+header {
+  width: 920px;
+  padding: 20px 20px 0 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  float: left;
+  background: transparent url("logo.png") 0 0 no-repeat;
+  padding: 45px 0 15px 115px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #193441;
+}
+
+nav {
+  padding: 75px 0 0 0;
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 40px 14px 40px;
+  color: #99b0a4;
+  text-decoration: none;
+  background: #fcfff5;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+nav a.active {
+  color: #fcfff5;
+  background: #91aa9d;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  clear: both;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 8px 8px #c6c6c4;
+}
+
+main h2 {
+  font-weight: normal;
+  font-size: 32px;
+  margin: 40px 0 0 0;
+}
+
+main article {
+  margin: 27px 0 0 0;
+}
+
+main article p {
+  margin: 0 0 30px 0;
+}
+
+main article figure {
+  margin: 0 0 0 40px;
+  float: right;
+}
+
+footer {
+  padding: 15px 0 0 0;
+  width: 960px;
+  margin: 0 auto 35px;
+  font-size: 14px;
+}

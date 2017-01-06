@@ -1,0 +1,124 @@
+@import "whitespace-reset.css";
+
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  color: #282828;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 25px 0;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 19px;
+}
+
+label {
+  font-weight: bold;
+  color: #666766;
+  display: block;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+fieldset {
+  padding: 25px 32px;
+  background: #ececec;
+  border-left: 4px solid #cdcccb;
+  margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 8px;
+  border: 1px solid #2e67b2;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 40px;
+  margin-bottom: 21px;
+}
+
+input[name*="name"] {
+  width: 49%;
+}
+
+input[name="last_name"] {
+  margin-left: 2%;
+}
+
+dt {
+  margin-bottom: 12px;
+}
+
+textarea {
+  resize: vertical;
+  height: auto;
+  max-height: 250px;
+}
+
+h2 label {
+  color: inherit;
+  padding-bottom: 0;
+}
+
+.columns {
+  display: inline-block;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.columns:last-child {
+  padding-right: 0;
+}
+
+.three {
+  width: 33.3%;
+}
+
+.two {
+  width: 50%;
+}
+
+.agreement {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.agreement input {
+  float: left;
+}
+
+.agreement div {
+  float: right;
+  width: 96%;
+  position: relative;
+  top: -2px;
+}
+
+input[type="submit"] {
+  background: #2e67b2;
+  height: 46px;
+  width: 176px;
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6095cb;
+}
