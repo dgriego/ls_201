@@ -1,0 +1,53 @@
+body {
+  background: url("bg_body.gif");
+  font: normal 20px Helvetica, Arial, sans-serif;
+  color: #45494d;
+}
+
+header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header h1 {
+  padding: 90px 0 50px;
+  text-align: center;
+}
+
+main {
+  padding-top: 75px;
+  width: 1000px;
+  background: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main article {
+  padding: 0 110px 100px 110px;
+}
+
+main h2 {
+  font-size: 1.8em;
+}
+
+article h3 {
+  color: #28989e;
+}
+
+footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background: #e7e7e7;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 63px;
+}
