@@ -1,0 +1,150 @@
+@import url('../whitespace-reset.css');
+
+body {
+  padding-top: 135px;
+  background: transparent url('images/bg_body.gif') 50% 0 repeat;
+  text-align: center;
+  font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.active {
+  color: #6db9ff;
+  font-weight: bold;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header h1 {
+  padding-bottom: 127px;
+}
+
+header h1 img {
+  margin: 0 auto;
+}
+
+header ul li a {
+  font-size: 26px;
+  text-decoration: none;
+  color: #cacaca;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 89px;
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+nav {
+  padding-bottom: 39px;
+}
+
+main {
+  padding: 110px 0 125px;
+  background: #ffffff;
+}
+
+main h2 {
+  font-size: 36px;
+  padding-bottom: 28px;
+}
+
+main h2:before,
+main h2:after {
+  content: "\2022";
+  display: inline-block;
+  margin: 0 28px;
+  font-size: 23px;
+  vertical-align: 3px;
+}
+
+main article h3 {
+  color: #3e59b2;
+  padding-bottom: 18px;
+}
+
+main article {
+  padding: 0 110px 150px;
+}
+
+footer {
+  font-size: 20px;
+  color: #b2b2b2;
+  background: #e7e7e7;
+  padding: 85px 0 72px;
+}
+
+footer p {
+  padding-bottom: 43px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 125px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  display: block;
+  background: transparent url('images/icons_social-media.png') 0 0 no-repeat;
+  width: 50px;
+  height: 46px;
+}
+
+footer ul li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer ul li a.mail {
+  background-position: 0 -92px;
+}
+
+footer ul li a.instagram {
+  background-position: 0 -138px;
+}
+
+#projects figure {
+  margin-bottom: 50px;
+}
+
+#projects article {
+  padding: 0 0 120px 0;
+}
+
+#projects article p {
+  padding: 0 123px;
+}
+
+#team article {
+  padding-bottom: 0;
+}
+
+#team ul li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+#team ul img {
+  margin-bottom: 15px;
+}
+
+#team ul a {
+  display: block;
+  text-decoration: none;
+}
+
+#team article p {
+  margin-bottom: 100px;
+}
+
+#team ul li:last-child {
+  margin-right: 0;
+}
