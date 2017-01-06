@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -23,6 +23,15 @@ header h1 {
 
 header h1 img {
   margin: 0 auto;
+}
+
+header h1 a {
+  width: 301px;
+  display: block;
+  height: 245px;
+  background: transparent url(images/logo.png) 0 0 no-repeat;
+  margin: 0 auto;
+  text-indent: -9999px;
 }
 
 header ul li a {
@@ -72,6 +81,10 @@ main article {
   padding: 0 110px 150px;
 }
 
+main article:last-child {
+  padding-bottom: 0;
+}
+
 footer {
   font-size: 20px;
   color: #b2b2b2;
@@ -108,7 +121,7 @@ footer ul li a.mail {
 }
 
 footer ul li a.instagram {
-  background-position: 0 -138px;
+  background-position: 0 100%;
 }
 
 #projects figure {
@@ -117,6 +130,10 @@ footer ul li a.instagram {
 
 #projects article {
   padding: 0 0 120px 0;
+}
+
+#projects article:last-child {
+  padding-bottom: 0;
 }
 
 #projects article p {
@@ -147,4 +164,115 @@ footer ul li a.instagram {
 
 #team ul li:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  main article {
+    padding: 0 40px 130px;
+  }
+
+  main article:last-child {
+    padding-bottom: 0;
+  }
+
+  main article p {
+    text-align: justify;
+  }
+
+  #projects img {
+    width: 100%;
+    display: block;
+  }
+
+  #projects article p {
+    padding: 0 40px;
+  }
+
+  #team ul li {
+    width: 49%;
+    margin: 0 0 50px 0;
+  }
+
+  header h1 {
+    padding-bottom: 40px;
+  }
+
+  main {
+    padding: 70px 0 75px;
+  }
+
+  body {
+    font-size: 16px;
+    padding-top: 80px;
+  }
+
+  footer ul li {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header h1 a {
+    width: auto;
+    height: 50px;
+    background-size: 95px auto;
+  }
+
+  header nav {
+    text-align: right;
+  }
+
+  header ul li {
+    display: block;
+    margin-right: 0;
+  }
+
+  header h1 {
+    float: left;
+    margin: 20px 0 0 0;
+  }
+
+  header h1 a {
+    text-decoration: none;
+    width: auto;
+    height: 40px;
+    padding: 10px 0 0 55px;
+    font-size: 22px;
+    color: #ffffff;
+    background-position: -20px 0;
+    background-size: 90px auto;
+    text-indent: 0;
+  }
+
+  header nav {
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  header ul li a {
+    font-size: 16px;
+  }
+
+  header ul li {
+    margin-bottom: 10px;
+  }
+
+  header ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  header {
+    padding: 19px;
+  }
+
+  main h2:before, main h2:after {
+    margin: 0 16px;
+  }
+
+  footer ul li {
+    margin-right: 30px;
+  }
 }
