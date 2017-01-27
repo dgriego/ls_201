@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Fixed and Variable width containers</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      #columns {
+        width: 840px;
+        padding: 20px;
+        margin: 0 auto;
+        background: #F7F7F7;
+        /* overflow: auto; */ /* ONE METHOD*/
+      }
+
+      /* The parent element (collapsed) */
+      #columns:after {
+        display: block;
+        clear: both;
+        content: "";
+      }
+
+      #primary, #secondary {
+        background-color: #FFFF00;
+      }
+
+      #primary {
+        float: left;
+        width: 575px;
+      }
+
+      #secondary {
+        float: right;
+        width: 245px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="columns">
+      <div id="primary">
+        <h1>Main Content</h1>
+      </div>
+
+      <div id="secondary">
+        <h3>Sidebar Content</h3>
+      </div>
+
+      <!-- <div style="clear: both;"></div> -->
+    </div>
+  </body>
+</html> 
