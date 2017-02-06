@@ -1,5 +1,20 @@
 @import url("whitespace-reset.css");
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  line-height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+}
+
 h1 {
   margin: 0 0 25px 0;
   font-size: 2.6em;
@@ -20,14 +35,14 @@ h4 {
   font-size: 1.5em;
 }
 
-.copy p {
+.copy p { 
   margin: 0 0 20px 0;
   font-size: 1em;
   line-height: 150%;
 }
 
 .copy ul {
-  padding: 0 0 20px 25px;
+  padding: 0 0 20px 20px;
   list-style: disc;
 }
 
@@ -51,25 +66,24 @@ h4 {
 }
 
 .copy ol.roman ol {
-  padding: 20px 0 20px 18px;
   list-style: lower-roman;
 }
 
 .row {
-  clear: both;
   max-width: 1200px;
-  margin: 0 auto 20px auto;
   box-sizing: border-box;
+  margin: 0 auto 20px;
 }
 
 .row:after {
+  content: "";
   display: block;
   clear: both;
   line-height: 0;
-  content: "";
 }
 
-.half, .third, .fourth, .sixth, .two_third, .five_sixth {
+.half, .third, .fourth, .sixth, .two_third,
+.five_sixth {
   float: left;
   box-sizing: border-box;
 }
@@ -116,7 +130,9 @@ h4 {
 .margin_row .five_sixth + .fourth,
 .margin_row .five_sixth + .sixth,
 .margin_row .five_sixth + .two_third,
-.margin_row .five_sixth + .five_sixth { margin-left: 2%; }
+.margin_row .five_sixth + .five_sixth {
+  margin-left: 2%;
+}
 
 .margin_row .half { width: 49%; }
 .margin_row .third { width: 32%; }

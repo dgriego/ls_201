@@ -1,0 +1,234 @@
+@import url('../whitespace-reset.css');
+@import url('../framework.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+body {
+  font: normal 13px "Open Sans", Arial, sans-serif;
+  color: #444444;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #444444;
+  text-decoration: none;
+}
+
+nav {
+  border-top: 10px solid #F5F5F5;
+  position: fixed;
+  background: #ffffff;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  margin: 0 auto;
+  max-max-width: 960px;
+  text-align: center;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px 25px 15px;
+}
+
+nav ul a {
+  text-transform: uppercase;
+}
+
+header {
+  margin-top: 58px;
+  text-align: center;
+  padding: 135px 0 20px;
+  background: rgb(37, 37, 37);
+  color: #ffffff;
+}
+
+header img {
+  width: 75px;
+  height: 75px;
+  background: rgba(68, 68, 68, 0.16);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 5em;
+  font-weight: 400;
+}
+
+header h3 {
+  font-size: 2.1em;
+  font-weight: 200;
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.14);
+  text-align: center;
+}
+
+.section h2 {
+  font-weight: 200;
+  font-size: 3.6em;
+}
+
+.section p {
+  margin-bottom: 17px;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.section .button {
+  background: #008000;
+  color: #ffffff;
+  font-size: 16.9px;
+  padding: 10px 30px;
+  font-weight: bold;
+}
+
+.speakers {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.speakers .row h2 {
+  font-size: 1.9em;
+  font-weight: bold;
+  margin: 25px 0 5px 0;
+  color: #008000;
+}
+
+.speakers .row img {
+  height: 200px;
+  background: rgba(68, 68, 68, 0.05);
+  width: 100%;
+}
+
+.speakers .third {
+  border: 1px solid rgba(68, 68, 68, 0.14);
+  padding: 0 0 35px 0;
+}
+
+.schedule {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 2em;
+  text-align: left;
+}
+
+table a {
+  color: #008000;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+table tr {
+  border-top: 1px solid rgba(68, 68, 68, 0.14);
+}
+
+table tr:last-of-type {
+  border-bottom: 1px solid rgba(68, 68, 68, 0.14);
+}
+
+table td {
+  padding: 10px;
+}
+
+table td:first-of-type {
+  width: 9%;
+}
+
+table td:last-of-type {
+  width: 15%;
+}
+
+.schedule_table img {
+  width: 130px;
+}
+
+.schedule_table h2 {
+  font-weight: normal;
+  vertical-align: middle;
+  font-size: 1em;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.tag {
+  font-size: .3em;
+  background: #eaeaea;
+  color: #5d5d5d;
+  padding: 1px 4px;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.schedule_table .name_link {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.location p, .call p {
+  max-width: 960px;
+  margin: 0 auto 17px;
+  text-align: left;
+}
+
+.location .map {
+  height: 500px;
+  background: rgba(239, 239, 239, 0.31);
+  margin: 40px 0;
+}
+
+.margin_row .third {
+  float: none;
+  display: inline-block;
+  width: 31%;
+  margin-bottom: 20px;
+}
+
+.third:nth-child(3n + 1) {
+  margin-left: 0 !important;
+}
+
+@media (max-width: 654px) {
+  nav {
+    display: none;
+  }
+
+  .margin_row .third {
+    width: 43%;
+  }
+
+  .third:nth-child(3n + 1) {
+    margin-left: 2% !important;
+  }
+
+  .third:nth-child(2n + 1) {
+    margin-left: 0;
+  }
+
+  header {
+    margin-top: 0;
+    padding: 70px 0 20px;
+  }
+
+  .location p, .call p {
+    width: 85%;
+  }
+}
